@@ -4,8 +4,7 @@ dotnet tool install -g AcBlog.Tools.StaticGenerator --version 0.0.1 --add-source
 if (!$?) {
     exit 1
 }
-acblog-sgen
-# AcBlog.Tool.StaticGenerator $env:INPUT_DIST
+acblog-sgen -o $env:INPUT_DIST
 if (!$?) {
     exit 1
 }

@@ -1,0 +1,11 @@
+name: "Static Backend Generate"
+description: "Generate AcBlog static backend"
+author: "StardustDL"
+inputs:
+  dist:
+    description: "Dist directory, not endswith '/', default to './dist'."
+    required: false
+    default: "./dist"
+runs:
+  using: "node12"
+  main: "main.js"

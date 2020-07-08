@@ -4,10 +4,6 @@ dotnet tool install -g AcBlog.Tools.Sdk --add-source https://sparkshine.pkgs.vis
 if (!$?) {
     exit 1
 }
-acblog init
-if (!$?) {
-    exit 1
-}
 acblog remote add origin $env:INPUT_DIST
 if (!$?) {
     exit 1

@@ -1,6 +1,6 @@
 #!/bin/pwsh
 
-dotnet tool install -g AcBlog.Tools.Sdk --add-source https://www.myget.org/F/stardustdl/api/v3/index.json
+dotnet tool install -g AcBlog.Tools.Sdk --add-source https://sparkshine.pkgs.visualstudio.com/StardustDL/_packaging/feed/nuget/v3/index.json
 if (!$?) {
     exit 1
 }

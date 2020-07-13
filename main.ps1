@@ -8,6 +8,10 @@ acblog remote add origin $env:INPUT_DIST
 if (!$?) {
     exit 1
 }
+acblog remote origin
+if (!$?) {
+    exit 1
+}
 acblog push
 if (!$?) {
     exit 1
